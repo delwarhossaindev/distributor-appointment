@@ -1,0 +1,2385 @@
+{
+	"info": {
+		"_postman_id": "65a92fcf-e5b9-4d38-a6fb-203ec6cc112c",
+		"name": "distributor appointment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14415247"
+	},
+	"item": [
+		{
+			"name": "Business Info List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/business_info",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"business_info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get District",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/get_district",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"get_district"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Drop Down Data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/get_drop_down_data",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"get_drop_down_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Code Amendment List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/code_amendment",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"code_amendment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Code Closure List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/code_closure",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"code_closure"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Document Comment List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/document_comment",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"document_comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Distributorship Info List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/distributorship_info",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"distributorship_info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Distributor Pending List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/distributor_pending",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"distributor_pending"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Business Info Insert",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "coverage_info",
+							"value": "[{\"district\": \"rongpur\",\"thana\": \"sheyedpur\"},{\"district\": \"chardpur\",\"thana\": \"laksam\"}]",
+							"type": "text"
+						},
+						{
+							"key": "month_business_salt",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "month_business_flour",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "month_business_oil",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "month_business_rice",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "month_business_pulse",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "month_business_tea",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "month_business_dairy",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "month_business",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "comm_earnings",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_prod",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "sr_productivity",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "urban_wetmarket_grocer",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "urban_neighborhood_grocer",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "urban_general_store",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "urban_cosmetic_store",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "confectionary",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "urban_retail_coverage",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "smmt",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "chemist_pharmacy",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "rural_grocer",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "tong_tea_stall",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "horeca",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "rural_retail_coverage",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "dd_institution",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "others_channel",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "route_wholesale",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "csm_route_ols",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "sd_coverage_ols",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "alt_coverage",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "direct_coverage",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "controlled_coverage",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "daily_total_routes",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "bi_weekly_3_total_routes",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "bi_weekly_2_total_routes",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "weekly_total_routes",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "fortnightly_total_routes",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "daily_total_sections",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "bi_weekly_3_total_sections",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "bi_weekly_2_total_sections",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "weekly_total_sections",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "fortnightly_total_sections",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "peripheral_db_east",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "peripheral_db_west",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "peripheral_db_north",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "peripheral_db_south",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "peripheral_md_east",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "peripheral_md_west",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "peripheral_md_north",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "peripheral_md_south",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "back_office_team_manager",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "back_office_team_supervisor",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "back_office_team_comp_operator",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "back_office_team_csm",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "back_office_team_office_clerk",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "back_office_team_godown_keeper",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "back_office_team_peon_guards",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "back_office_team_driver_nmv",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "back_office_team_others",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "back_office_team_field_forces",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "back_office_team_sales_representative",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "back_office_team_delivery_man",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "back_office_team_driver_mech_vehicle",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "back_office_force",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "total_manpower",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "logistics_vehicles",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "logistics_number_of_mv_4wh",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "logistics_tempoo_3whl",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "logistics_engine_boat_mv",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "logistics_number_of_nmv",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "logistics_total_vehicles",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "logistics_vehicle_section",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "logistics_ol_productivity",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "logistics_route_prod",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "logistics_section_prod",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "logistics_route",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "route_service_mv_route",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "route_service_nmv_route",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "outlet_coverage_mv_route",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "outlet_coverage_nmv_route",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "route_productivity_mv_route",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "route_productivity_nmv_route",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "total_routes",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "leverage_it",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "computer",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "printer",
+							"value": "65",
+							"type": "text"
+						},
+						{
+							"key": "warehouse_address",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "warehouse_district",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "warehouse_thana",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "office_hight",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "warehouse_hight",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "hight_total",
+							"value": "67",
+							"type": "text"
+						},
+						{
+							"key": "office_length",
+							"value": "67",
+							"type": "text"
+						},
+						{
+							"key": "warehouse_length",
+							"value": "87",
+							"type": "text"
+						},
+						{
+							"key": "length_total",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "workspace_structure_office",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "warehouse_structure_length",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "warehouse_condition",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "electrical_wiring",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "insurance_coverage",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "insurance_coverage_office",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "insurance_coverage_warehouse",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "team_sitting_arrangement",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "fire_fighting_facilities",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "investment_capabilities",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "self_finance",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "loan",
+							"value": "345",
+							"type": "text"
+						},
+						{
+							"key": "working_capital",
+							"value": "4456",
+							"type": "text"
+						},
+						{
+							"key": "stock_value",
+							"value": "345",
+							"type": "text"
+						},
+						{
+							"key": "credit_to_trade",
+							"value": "656",
+							"type": "text"
+						},
+						{
+							"key": "cash_in_hand",
+							"value": "4646",
+							"type": "text"
+						},
+						{
+							"key": "pending_claims",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "mechanized_vehicle",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "non_mechanized_vehicle",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "office_furniture_equipment",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "total_investment",
+							"value": "242",
+							"type": "text"
+						},
+						{
+							"key": "wc_to",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "stock_days_cover",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "stock_salt",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "stock_flour",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "stock_oil",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "stock_rice",
+							"value": "45",
+							"type": "text"
+						},
+						{
+							"key": "stock_pulse",
+							"value": "67",
+							"type": "text"
+						},
+						{
+							"key": "stock_tea",
+							"value": "76",
+							"type": "text"
+						},
+						{
+							"key": "stock_dairy",
+							"value": "34",
+							"type": "text"
+						},
+						{
+							"key": "investment_stock",
+							"value": "45",
+							"type": "text"
+						},
+						{
+							"key": "investment_to",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "distributor_bank_name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "bank_account_number",
+							"value": "34",
+							"type": "text"
+						},
+						{
+							"key": "branch_name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "payment_mode",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "delivery_product",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "carrying_charge_claimable",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "distributorship_info_master_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/business_info",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"business_info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Zone",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "search",
+							"value": "G003",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/get_zone",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"get_zone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Territory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "search",
+							"value": "YG0T",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/get_territory",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"get_territory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Thana",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "district",
+							"value": "01",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/get_thana",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"get_thana"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Distributorship  Info Insert",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "region",
+							"value": "Your Region",
+							"type": "text"
+						},
+						{
+							"key": "zone",
+							"value": "Your Zone",
+							"type": "text"
+						},
+						{
+							"key": "territory",
+							"value": "Your Territory",
+							"type": "text"
+						},
+						{
+							"key": "location_name",
+							"value": "Your Location",
+							"type": "text"
+						},
+						{
+							"key": "business_type",
+							"value": "Your Business Type",
+							"type": "text"
+						},
+						{
+							"key": "appointment_type",
+							"value": "Your Appointment Type",
+							"type": "text"
+						},
+						{
+							"key": "replacement_reappointment",
+							"value": "Your Replacement Reappointment",
+							"type": "text"
+						},
+						{
+							"key": "inception_date",
+							"value": "2024-05-09",
+							"type": "text"
+						},
+						{
+							"key": "reason_for_replacing",
+							"value": "Your Reason for Replacing",
+							"type": "text"
+						},
+						{
+							"key": "business",
+							"value": "Your Business",
+							"type": "text"
+						},
+						{
+							"key": "projected_monthly_business",
+							"value": "10000",
+							"type": "text"
+						},
+						{
+							"key": "projected_roi_percent",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "competes_evaluated",
+							"value": "Your Competes Evaluated",
+							"type": "text"
+						},
+						{
+							"key": "current_relationship_details",
+							"value": "Your Current Relationship Details",
+							"type": "text"
+						},
+						{
+							"key": "past_relationship_details",
+							"value": "Your Past Relationship Details",
+							"type": "text"
+						},
+						{
+							"key": "workspace_office",
+							"value": "Your Workspace Office",
+							"type": "text"
+						},
+						{
+							"key": "workspace_warehouse",
+							"value": "Your Workspace Warehouse",
+							"type": "text"
+						},
+						{
+							"key": "workspace_office_structure",
+							"value": "Your Workspace Office Structure",
+							"type": "text"
+						},
+						{
+							"key": "workspace_warehouse_structure",
+							"value": "Your Workspace Warehouse Structure",
+							"type": "text"
+						},
+						{
+							"key": "existing_staff_market_operation",
+							"value": "Your Existing Staff Market Operation",
+							"type": "text"
+						},
+						{
+							"key": "mechanised",
+							"value": "Your Mechanised",
+							"type": "text"
+						},
+						{
+							"key": "non_mechanised",
+							"value": "Your Non Mechanised",
+							"type": "text"
+						},
+						{
+							"key": "trade_license_no",
+							"value": "Your Trade License No",
+							"type": "text"
+						},
+						{
+							"key": "vat_registration_no",
+							"value": "Your VAT Registration No",
+							"type": "text"
+						},
+						{
+							"key": "distributorship_companies",
+							"value": "Your Distributorship Companies",
+							"type": "text"
+						},
+						{
+							"key": "current_finance_details",
+							"value": "Your Current Finance Details",
+							"type": "text"
+						},
+						{
+							"key": "applicant_detail",
+							"value": "{\"name\": \"Applicant Name\",\"father_name\": \"Father's Name\",\"mother_name\": \"Mother's Name\",\"present_address\": \"Present Address\",\"permanent_address\": \"Permanent Address\",\"nid_no\": \"NID No\",\"tin_no\": \"TIN No\",\"business_name\": \"Business Name\",\"ownership_type\": \"Ownership Type\",\"operating_market\": \"Operating Market\",\"operating_business_type\": \"Operating Business Type\",\"operating_business_year\": 5,\"avg_annual_turnover\": 50000}",
+							"type": "text"
+						},
+						{
+							"key": "office_info",
+							"value": "{\"address\": \"Office Address\",\"city\": \"Office City\",\"post_code\": \"Office Post Code\",\"union_name\": \"Office Union Name\",\"thana\": \"Office Thana\",\"telephone\": \"Office Telephone\",\"mobile\": \"Office Mobile\",\"fax\": \"Office Fax\",\"contact_person\": \"Office Contact Person\",\"email\": \"Office Email\"}",
+							"type": "text"
+						},
+						{
+							"key": "warehouse_address",
+							"value": "{\"address\": \"Warehouse Address\",\"city\": \"Warehouse City\",\"post_code\": \"Warehouse Post Code\",\"union_name\": \"Warehouse Union Name\",\"thana\": \"Warehouse Thana\",\"telephone\": \"Warehouse Telephone\",\"mobile\": \"Warehouse Mobile\",\"fax\": \"Warehouse Fax\",\"contact_person\": \"Warehouse Contact Person\",\"email\": \"Warehouse Email\"}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/distributorship_info",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"distributorship_info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Code Amendment  Insert",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "requisition_date",
+							"value": "2023-09-09",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "Your Zone",
+							"type": "text"
+						},
+						{
+							"key": "depot",
+							"value": "region",
+							"type": "text"
+						},
+						{
+							"key": "business",
+							"value": "business",
+							"type": "text"
+						},
+						{
+							"key": "customer_name",
+							"value": "customer_name",
+							"type": "text"
+						},
+						{
+							"key": "contact_person",
+							"value": "contact_person",
+							"type": "text"
+						},
+						{
+							"key": "address_one",
+							"value": "address_one",
+							"type": "text"
+						},
+						{
+							"key": "address_two",
+							"value": "address_two",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "phone",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "mobile",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "email",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "category",
+							"type": "text"
+						},
+						{
+							"key": "customer_type",
+							"value": "customer_type",
+							"type": "text"
+						},
+						{
+							"key": "payment_mode",
+							"value": "payment_mode",
+							"type": "text"
+						},
+						{
+							"key": "metro",
+							"value": "metro",
+							"type": "text"
+						},
+						{
+							"key": "route",
+							"value": "route",
+							"type": "text"
+						},
+						{
+							"key": "territory",
+							"value": "territory",
+							"type": "text"
+						},
+						{
+							"key": "district",
+							"value": "district",
+							"type": "text"
+						},
+						{
+							"key": "upazilla",
+							"value": "upazilla",
+							"type": "text"
+						},
+						{
+							"key": "union",
+							"value": "union",
+							"type": "text"
+						},
+						{
+							"key": "hat_bazar",
+							"value": "hat_bazar",
+							"type": "text"
+						},
+						{
+							"key": "nid",
+							"value": "nid",
+							"type": "text"
+						},
+						{
+							"key": "reason_amendment",
+							"value": "reason_amendment",
+							"type": "text"
+						},
+						{
+							"key": "field_name",
+							"value": "field_name",
+							"type": "text"
+						},
+						{
+							"key": "current_data",
+							"value": "2023-04-03",
+							"type": "text"
+						},
+						{
+							"key": "amendment",
+							"value": "Your Current Finance Details",
+							"type": "text"
+						},
+						{
+							"key": "distributorship_info_master_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/code_amendment",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"code_amendment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Code Closure  Insert",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "requisition_date",
+							"value": "2023-09-09",
+							"type": "text"
+						},
+						{
+							"key": "code_closed_on",
+							"value": "2023-09-09",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "region",
+							"type": "text"
+						},
+						{
+							"key": "zone",
+							"value": "business",
+							"type": "text"
+						},
+						{
+							"key": "territory",
+							"value": "customer_name",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "contact_person",
+							"type": "text"
+						},
+						{
+							"key": "selection_distributor_date",
+							"value": "2023-09-09",
+							"type": "text"
+						},
+						{
+							"key": "customer_type",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "salt",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "flour",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "edible_oil",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "rice",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "dairy",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "tea",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "distribution_name",
+							"value": "metro",
+							"type": "text"
+						},
+						{
+							"key": "proprietor_name",
+							"value": "route",
+							"type": "text"
+						},
+						{
+							"key": "reason_closure",
+							"value": "territory",
+							"type": "text"
+						},
+						{
+							"key": "business",
+							"value": "district",
+							"type": "text"
+						},
+						{
+							"key": "claim_month",
+							"value": "2023-09-09",
+							"type": "text"
+						},
+						{
+							"key": "type_claim",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "claim_details",
+							"value": "hat_bazar",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "grand_total",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "account_name",
+							"value": "account_name",
+							"type": "text"
+						},
+						{
+							"key": "bank_name",
+							"value": "bank_name",
+							"type": "text"
+						},
+						{
+							"key": "ac_no",
+							"value": "656756756",
+							"type": "text"
+						},
+						{
+							"key": "distributorship_info_master_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/code_closure",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"code_closure"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Distributor Pending Insert",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "code_creation",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "distributor_form",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "business_infor",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "documents_comments",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "code_closure",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "distributorship_info_master_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/distributor_pending",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"distributor_pending"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Document Comment Insert",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sm_comment",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "sm_distributor_type",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "sm_distributor_description",
+							"value": "sm_distributor_description",
+							"type": "text"
+						},
+						{
+							"key": "gm_comment",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "gm_distributor_type",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "gm_distributor_description",
+							"value": "gm_distributor_description",
+							"type": "text"
+						},
+						{
+							"key": "passport_size_image_one",
+							"type": "file",
+							"src": "/C:/Users/ACI/Pictures/Capture.PNG"
+						},
+						{
+							"key": "passport_size_image_two",
+							"type": "file",
+							"src": "/C:/Users/ACI/Pictures/Capture.PNG"
+						},
+						{
+							"key": "passport_size_image_three",
+							"type": "file",
+							"src": "/C:/Users/ACI/Pictures/Capture.PNG"
+						},
+						{
+							"key": "vat_registration_details_file",
+							"type": "file",
+							"src": "/C:/Users/ACI/Pictures/Capture.PNG"
+						},
+						{
+							"key": "bank_statements_file_one",
+							"type": "file",
+							"src": "/C:/Users/ACI/Pictures/Capture.PNG"
+						},
+						{
+							"key": "bank_statements_file_two",
+							"type": "file",
+							"src": "/C:/Users/ACI/Pictures/Capture.PNG"
+						},
+						{
+							"key": "nid_file",
+							"type": "file",
+							"src": "/C:/Users/ACI/Pictures/Capture.PNG"
+						},
+						{
+							"key": "etin_file",
+							"type": "file",
+							"src": "/C:/Users/ACI/Pictures/Capture.PNG"
+						},
+						{
+							"key": "utility_bill_file",
+							"type": "file",
+							"src": "/C:/Users/ACI/Pictures/Capture.PNG"
+						},
+						{
+							"key": "office_warehouse_photo_file",
+							"type": "file",
+							"src": "/C:/Users/ACI/Pictures/Capture.PNG"
+						},
+						{
+							"key": "partnership_memorandum_file",
+							"type": "file",
+							"src": "/C:/Users/ACI/Pictures/Capture.PNG"
+						},
+						{
+							"key": "roi_file",
+							"type": "file",
+							"src": "/C:/Users/ACI/Pictures/Capture.PNG"
+						},
+						{
+							"key": "db_declaration_file",
+							"type": "file",
+							"src": "/C:/Users/ACI/Pictures/Capture.PNG"
+						},
+						{
+							"key": "distributorship_info_master_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/document_comment",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"document_comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Business Info Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/business_info/1",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"business_info",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Distributorship  Info Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/distributorship_info/1",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"distributorship_info",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Code Amendment Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/code_amendment/1",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"code_amendment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Business Info Show Data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/business_info/1",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"business_info",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Distributorship  Info Show Data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/distributorship_info/9",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"distributorship_info",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Code Amendment Show Data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/code_amendment/1",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"code_amendment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Code Closure Show Data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/code_amendment/1",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"code_amendment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Document Comment Show Data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/document_comment/1",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"document_comment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Distributor Pending Show Data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/distributor_pending/1",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"distributor_pending",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Distributor List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/distributor_list",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"distributor_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Total Info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/total_info/1",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"total_info",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pending Approval",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/pending_approval",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"pending_approval"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "33231",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{30_SERVER}}distributor-appointment/api/login",
+					"host": [
+						"{{30_SERVER}}distributor-appointment"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
